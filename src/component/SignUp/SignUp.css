@@ -101,3 +101,9 @@ h2 {
 .form .link:hover {
   color: #8e8e8e;
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 0px);
+  }
+}
