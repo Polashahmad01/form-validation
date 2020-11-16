@@ -1,9 +1,16 @@
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+import './App.css';
+import SignUp from './SignUp/SignUp';
+
 
 const App = () => {
 
     return (
-        <div>Hello</div>
+        <BrowserRouter>
+            <Route to="/" component={SignUp}></Route>
+        </BrowserRouter>
     );
 };
 
