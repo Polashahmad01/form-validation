@@ -1,22 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './SignUp.css';
+import './SignIn.css'
 
-const SignUp = () => {
-
+const SignIn = () => {
+    
     return (
         <div className="container">
             <form className="form">
-                <h2>SIGN UP</h2>
+                <h2>SIGN IN</h2>
                 <div className="form-control">
                     <label htmlFor="username">Username</label>
                     <input type="text" placeholder="Enter Your Username"/>
-                    <small>Error Message</small>
-                </div>
-                <div className="form-control">
-                    <label htmlFor="email">Email</label>
-                    <input type="text" placeholder="Enter Your Email"/>
                     <small>Error Message</small>
                 </div>
                 <div className="form-control">
@@ -24,16 +19,11 @@ const SignUp = () => {
                     <input type="password" placeholder="Enter Your Password"/>
                     <small>Error Message</small>
                 </div>
-                <div className="form-control">
-                    <label htmlFor="password2">Confirm Password</label>
-                    <input type="password" placeholder="Enter Your Password Again"/>
-                    <small>Error Message</small>
-                </div>
                 <button>Sign in</button>
-                <p className="sign-in">Already registered? <Link className="link" to="/">Sign In</Link></p>
+                <p className="sign-in">Already registered? <Link className="link" to="/signup">Sign Up</Link></p>
             </form>
         </div>
     );
 };
 
-export default SignUp;
+export default SignIn;

@@ -1,0 +1,38 @@
+.container {
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 5px;
+  color: #1d8080;
+}
+
+.form .sign-in {
+  text-align: center;
+  margin: 15px;
+  color: #8e8e8e;
+}
+
+.form .link {
+  color: #1d8080;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+
+.form .link:hover {
+  color: #8e8e8e;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 0px);
+  }
+}
